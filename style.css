@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size:62.5%;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    background: linear-gradient(45deg, #190361, #bb00ff);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+main {
+    border-radius: 0.6rem;
+    background: #FFF;
+    box-shadow: 0px 0.2rem 5rem rgba(0, 0, 0, 0.80);
+    padding: 4.8rem 6.4rem 4.8rem 6.4rem;
+    text-align: center;
+    width: min(42.8rem, 90%);
+    margin-top: -5rem;
+    gap: 1rem;
+}
+
+/* Home */
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: 1.4rem;
+}
+
+p {
+    font-family: "DM Sans", sans-serif;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+h1, h2, p {
+    color: #34355B;
+}
+
+.biscoito {
+    cursor: pointer;
+}
+
+.tremendo {
+    animation: tremer 0.5s infinite;
+}
+
+@keyframes tremer {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px) rotate(2deg);
+    }
+    50% {
+        transform: translateX(5px) rotate(-2deg);
+    }
+    75% {
+        transform: translateX(-5px) rotate(2deg);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Sorte */
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: 1.7rem;
+}
+
+@keyframes crescer {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+        bottom: -16rem;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        bottom: 0;
+    }
+}
+
+#lucky {
+    border-radius: 0.3rem;
+    background-color: #bde3f3;
+    box-shadow: 0px 0.2rem 0.5rem rgba(0, 0, 0, 0.50);
+    font-family: "Dancing Script", sans-serif;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 6rem;
+    position: relative;
+    animation: crescer 2s ease-in-out;
+}
+
+#resetPage {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #FF9500;
+    border-radius: 0.6rem;
+    border: none;
+    width: 17.4rem;
+    height: 5.2rem;
+    margin-top: 6rem;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+#resetPage:hover {
+    background-color: #f5b65e;
+}
+
+.gradiente {
+    animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
